@@ -47,24 +47,13 @@ export function AboutSection() {
           >
             <div className="prose prose-lg dark:prose-invert">
               <p className="text-muted-foreground">
-                I'm a <strong className="text-foreground">Python AI Developer and Data Scientist</strong> specializing in conversational 
-                AI agents and intelligent automation. With a proven track record of delivering 
-                production-ready AI solutions that generate measurable business impact, I help 
-                organizations leverage artificial intelligence to streamline operations and 
-                enhance customer experiences.
+                I&apos;m a <strong className="text-foreground">Python AI Developer and Data Scientist</strong> specializing in conversational AI agents and intelligent automation. I help organizations leverage artificial intelligence to streamline operations and enhance customer experiences.
               </p>
               <p className="text-muted-foreground">
-                Currently serving as <strong className="text-foreground">Chief Technology Innovation Officer at OMC Group</strong>, I've 
-                led the adoption of AI technologies across the organization, impacting 100+ 
-                team members and automating critical business processes. My work has resulted 
-                in a 97% reduction in document processing time and the generation of 700+ 
-                automated compliance reports weekly.
+                Currently serving as <strong className="text-foreground">Chief Technology Innovation Officer at OMC Group</strong>, I&apos;ve led the adoption of AI technologies across the organization, impacting 100+ team members and automating critical business processes. My work has resulted in a 97% reduction in document processing time and the generation of 700+ automated compliance reports weekly.
               </p>
               <p className="text-muted-foreground">
-                Beyond development, I'm passionate about education and knowledge sharing. I've 
-                trained over 300 professionals across various organizations, including 
-                government institutions, on practical AI applications and implementation 
-                strategies.
+                Beyond development, I&apos;m passionate about education and knowledge sharing. I&apos;ve trained over 300 professionals across various organizations, including government institutions, on practical AI applications and implementation strategies.
               </p>
             </div>
 

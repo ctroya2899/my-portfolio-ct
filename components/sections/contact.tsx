@@ -98,7 +98,7 @@ export function ContactSection() {
             <div>
               <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
               <p className="text-muted-foreground mb-8">
-                I'm available for consulting, development projects, and corporate training.
+                I&apos;m available for consulting, development projects, and corporate training.
                 Typical response time: <strong className="text-foreground">24 hours</strong>.
               </p>
             </div>
@@ -271,7 +271,7 @@ export function ContactSection() {
                   animate={{ opacity: 1, y: 0 }}
                   className="text-sm text-green-600 dark:text-green-400 text-center"
                 >
-                  ✓ Thank you! I'll get back to you within 24 hours.
+                  ✓ Thank you! I&apos;ll get back to you within 24 hours.
                 </motion.div>
               )}
 

@@ -332,9 +332,9 @@ Always be professional, ask qualifying questions, and guide the conversation tow
               <div className="space-y-2 text-xs">
                 <p className="font-medium">Example prompts:</p>
                 <ul className="space-y-1 text-muted-foreground">
-                  <li>• "What are your AI services?"</li>
-                  <li>• "How much does consulting cost?"</li>
-                  <li>• "I'd like to schedule a meeting"</li>
+                  <li>• &quot;What are your AI services?&quot;</li>
+                  <li>• &quot;How much does consulting cost?&quot;</li>
+                  <li>• &quot;I&apos;d like to schedule a meeting&quot;</li>
                 </ul>
               </div>
             </div>

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { Bot, Brain, Network, ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 const projects = [
