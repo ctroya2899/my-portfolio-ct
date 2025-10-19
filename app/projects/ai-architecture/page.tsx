@@ -13,7 +13,6 @@ import ReactFlow, {
   useNodesState,
   useEdgesState,
   MarkerType,
-  Position,
 } from "reactflow"
 import "reactflow/dist/style.css"
 
@@ -361,7 +360,7 @@ export default function AIArchitecturePage() {
               <div className="space-y-2 max-h-[300px] overflow-y-auto">
                 {logs.length === 0 ? (
                   <p className="text-sm text-muted-foreground text-center py-8">
-                    Click "Run Simulation" to see agent execution
+                    Click &quot;Run Simulation&quot; to see agent execution
                   </p>
                 ) : (
                   logs.map((log, index) => (

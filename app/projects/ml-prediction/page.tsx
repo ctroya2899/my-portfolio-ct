@@ -1,10 +1,9 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useCallback } from "react"
 import { motion } from "framer-motion"
 import { ArrowLeft, Brain, TrendingUp, AlertCircle } from "lucide-react"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import dynamic from "next/dynamic"
 
 // Dynamically import Plotly to avoid SSR issues
@@ -38,12 +37,7 @@ export default function MLPredictionPage() {
   const [predictions, setPredictions] = useState<Prediction[]>([])
   const [selectedModel, setSelectedModel] = useState<string>("Random Forest")
 
-  useEffect(() => {
-    // Simulate predictions from different models
-    calculatePredictions()
-  }, [customerData])
-
-  const calculatePredictions = () => {
+  const calculatePredictions = useCallback(() => {
     // Simplified churn prediction logic (in production, this would call a real ML model)
     const baseChurnScore = calculateChurnScore(customerData)
     
@@ -66,7 +60,11 @@ export default function MLPredictionPage() {
     ]
     
     setPredictions(newPredictions)
-  }
+  }, [customerData])
+
+  useEffect(() => {
+    calculatePredictions()
+  }, [calculatePredictions])
 
   const calculateChurnScore = (data: CustomerData): number => {
     let score = 0.5 // Base score
@@ -306,7 +304,7 @@ export default function MLPredictionPage() {
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
                   font: { color: '#888' },
-                  xaxis: { title: 'Importance', gridcolor: '#333' },
+                  xaxis: { title: { text: 'Importance' }, gridcolor: '#333' },
                   yaxis: { gridcolor: '#333' }
                 }}
                 config={{ displayModeBar: false }}
@@ -336,7 +334,7 @@ export default function MLPredictionPage() {
                   paper_bgcolor: 'transparent',
                   plot_bgcolor: 'transparent',
                   font: { color: '#888' },
-                  yaxis: { title: 'Churn Probability (%)', gridcolor: '#333', range: [0, 100] },
+                  yaxis: { title: { text: 'Churn Probability (%)' }, gridcolor: '#333', range: [0, 100] },
                   xaxis: { gridcolor: '#333' }
                 }}
                 config={{ displayModeBar: false }}
