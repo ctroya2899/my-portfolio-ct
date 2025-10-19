@@ -79,7 +79,7 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-            Let's Work Together
+            Let&apos;s Work Together
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Ready to transform your business with AI? Get in touch to discuss your project.
